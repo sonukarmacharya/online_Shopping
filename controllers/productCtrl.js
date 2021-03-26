@@ -14,7 +14,7 @@ class APIfeatures {
     const excludedFields = ["page", "sort", "limit"];
     excludedFields.forEach((el) => delete queryObj[el]);
 
-    console.log({ after: queryObj });
+    console.log({ after: queryObj }); //page sort delete
 
     let queryStr = JSON.stringify(queryObj);
     //gte=greater than or equal to
